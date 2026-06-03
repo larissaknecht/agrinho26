@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Abelhas - Guardiãs da Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="logo">🐝 Mundo das Abelhas</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#importancia">Importância</a></li>
+                <li><a href="#colmeia">A Sociedade</a></li>
+                <li><a href="#preservacao">Como Ajudar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Pequenas no Tamanho, Gigantes na Natureza</h1>
+            <p>Descubra como as abelhas sustentam a vida no planeta através da polinização.</p>
+            <a href="#importancia" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção de Importância -->
+    <section id="importancia" class="container">
+        <h2 class="section-title">Por que elas são vitais?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Polinização</h3>
+                <p>Responsáveis pela reprodução de mais de 70% das plantas e cultivos agrícolas que alimentam o mundo.</p>
+            </div>
+            <div class="card">
+                <h3>Biodiversidade</h3>
+                <p>Garantem a sobrevivência de florestas e ecossistemas inteiros ao espalhar a flora nativa.</p>
+            </div>
+            <div class="card">
+                <h3>Economia</h3>
+                <p>Geram renda através da produção de mel, própolis, geleia real e serviços agrícolas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da Sociedade (Hierarquia) -->
+    <section id="colmeia" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">A Vida na Colmeia</h2>
+            <div class="grid">
+                <div class="card-caste">
+                    <span class="emoji">👑</span>
+                    <h3>A Rainha</h3>
+                    <p>Única fêmea fértil. Sua única função é botar ovos e liderar a colônia quimicamente.</p>
+                </div>
+                <div class="card-caste">
+                    <span class="emoji">🛠️</span>
+                    <h3>As Operárias</h3>
+                    <p>Fêmeas que fazem todo o trabalho: coletam néctar, limpam, defendem e alimentam a colmeia.</p>
+                </div>
+                <div class="card-caste">
+                    <span class="emoji">🐝</span>
+                    <h3>Os Zangões</h3>
+                    <p>Machos da colônia. Sua única e exclusiva missão é fecundar uma nova rainha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preservação -->
+    <section id="preservacao" class="container text-center">
+        <h2 class="section-title">Como Salvar as Abelhas?</h2>
+        <p style="max-width: 600px; margin: 0 auto 30px auto;">As populações de abelhas estão diminuindo devido aos pesticidas e à perda de habitat. Você pode fazer a diferença com pequenas atitudes cotidianas.</p>
+        <div class="grid">
+            <div class="step-card">
+                <strong>1. Plante Flores</strong>
+                <p>Cultive plantas nativas em seu jardim ou varanda para oferecer alimento.</p>
+            </div>
+            <div class="step-card">
+                <strong>2. Evite Pesticidas</strong>
+                <p>Não use venenos químicos em suas plantas domésticas.</p>
+            </div>
+            <div class="step-card">
+                <strong>3. Apoie Apicultores</strong>
+                <p>Compre mel de produtores locais e conscientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Mundo das Abelhas. Criado em prol da biodiversidade planetária.</p>
+        <p>Fontes e pesquisas recomendadas: <a href="https://abelha.org.br/" target="_blank" rel="noopener">Associação A.B.E.L.H.A.</a> e <a href="https://www.embrapa.br/meio-norte/abelhas" target="_blank" rel="noopener">Embrapa Abelhas</a>.</p>
+    </footer>
+
+</body>
+</html>
+Use o código com cuidado.🎨 Código do Arquivo style.csscss/* Configurações Gerais / Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #fcf8f2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Títulos de Seção */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c2512;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f39c12;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #1a160d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #1a160d;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #f1c40f;
+    transform: translateY(-3px);
+}
+
+/* Grids e Cartões Gerais */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-left: 5px solid #f39c12;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2c2512;
+}
+
+/* Cartões de Castas da Colmeia */
+.card-caste {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
+}
+
+.card-caste .emoji {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-caste h3 {
+    margin-bottom: 10px;
+    color: #1a160d;
+}
+
+/* Cartões de Passos de Preservação */
+.step-card {
+    background-color: #fff9e6;
+    border: 2px dashed #f39c12;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.step-card strong {
+    font-size: 1.2rem;
+    color: #d35400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a160d;
+    color: #999999;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 4px solid #f39c12;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
